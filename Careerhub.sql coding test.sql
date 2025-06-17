@@ -75,7 +75,7 @@ INSERT INTO Applications (JobID, ApplicantID, ApplicationDate, CoverLetter) VALU
  SELECT * FROM Applications
 
 
---1. Provide a SQL script that initializes the database for the Job Board scenario “CareerHub”. 
+--1. Provide a SQL script that initializes the database for the Job Board scenario â€œCareerHubâ€. 
 --2. Create tables for Companies, Jobs, Applicants and Applications. 
 --3. Define appropriate primary keys, foreign keys, and constraints. 
 --4. Ensure the script handles potential errors, such as if the database or tables already exist.
@@ -160,7 +160,7 @@ JOIN Applicants A ON Ap.ApplicantID = A.ApplicantID
 JOIN Jobs J ON Ap.JobID = J.JobID
 JOIN Companies C ON J.CompanyID = C.CompanyID
 WHERE 
-    C.Location = 'Chennai'         -- Replace with actual city if needed
+    C.Location = 'Chennai'         
     AND A.ExperienceYears >= 3;
 
 
