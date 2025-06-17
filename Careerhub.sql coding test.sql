@@ -250,8 +250,7 @@ JOIN Companies C ON J.CompanyID = C.CompanyID
 WHERE 
 J.Salary > ( SELECT AVG(Salary)
     FROM Jobs
-    WHERE Salary > 0
-    );
+    WHERE Salary > 0);
 
 
 --17. Display a list of applicants with their names and a concatenated string of their city and state.
@@ -265,15 +264,12 @@ ADD City VARCHAR(100),
 UPDATE Applicants
 SET City = 'Chennai', State = 'Tamil Nadu'
 WHERE ApplicantID = 1;
-
 UPDATE Applicants
 SET City = 'Mumbai', State = 'Maharashtra'
 WHERE ApplicantID = 2;
-
 UPDATE Applicants
 SET City = 'Bangalore', State = 'Karnataka'
 WHERE ApplicantID = 3;
-
 UPDATE Applicants
 SET City = 'Coimbatore', State = 'Tamil Nadu'
 WHERE ApplicantID = 4;
